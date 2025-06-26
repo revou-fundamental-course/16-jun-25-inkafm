@@ -1,0 +1,84 @@
+    :root {
+        --primary: #5895d6;
+        --secondary: #f8f9fa;
+        --dark: #343a40;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: var(--secondary);
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    main h3{
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2865a7;
+        height: 50px;
+    }
+    .grid-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 25px;
+        gap: 60px;
+    }
+
+    .card-menu {
+        background-color: var(--primary);
+        aspect-ratio: 1 / 1;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s;
+    }
+
+    .card-menu img {
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+    }
+
+    .card-menu:hover {
+        transform: scale(1.05);
+        background-color: #356ca7;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        .grid-menu {
+            gap: 10px;
+        }
+    }
